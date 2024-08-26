@@ -3,7 +3,7 @@ function convertir() {
     const pulgadas = document.getElementById('pulgadas').value;
 
     // esto verifica si el valor ingresado es un número para el resultado
-    if (isNaN(pulgadas) || pulgadas < 0) {
+    if (isNaN(pulgadas) || pulgadas <= 0) {
         document.getElementById('resultado').textContent = 'por favor, ingresar un valor válido en números positivos.';
         return;
     }
