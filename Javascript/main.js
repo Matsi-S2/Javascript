@@ -1,16 +1,65 @@
-function convertir() {
-    // obtiene el valor de las pulgadas desde el input
-    const pulgadas = document.getElementById('pulgadas').value;
 
-    // esto verifica si el valor ingresado es un número para el resultado
-    if (isNaN(pulgadas) || pulgadas <= 0) {
-        document.getElementById('resultado').textContent = 'por favor, ingresar un valor válido en números positivos.';
-        return;
+const listaElementos = [];
+
+function agregarElemento() {
+    // Captura el valor del input
+    const inputElemento = document.getElementById("inputElemento");
+    const nuevoElemento = inputElemento.value.trim();
+    
+    // Verifica si se introdujo algún valor
+    if (nuevoElemento !== "") {
+        // Agrega el nuevo elemento al array
+        listaElementos.push(nuevoElemento);
+        
+        
+        inputElemento.value = "";
+        
+        // Actualiza la visualización de la lista en la página
+        actualizarLista();
+    } else {
+        alert("No se introdujo un valor válido.");
     }
+}
 
-    // convierte las pulgadas a centimetros  es decir que 1 pulgada = 2.54 cm
-    const centimetros = pulgadas * 2.54;
+// Función para eliminar un elemento de la lista
+function eliminarElemento() {
+    
+    const elementoAEliminar = prompt("Introduce el elemento que deseas eliminar:");
+    
+    
+    if (elementoAEliminar !== null) {
+        const elementoAEliminarTrimmed = elementoAEliminar.trim();
+        
+        // Busca el índice del elemento en la lista
+        const indice = listaElementos.indexOf(elementoAEliminarTrimmed);
+        
+        // Verifica si el elemento se encuentra en la lista
+        if (indice !== -1) {
+            // Elimina el elemento del array
+            listaElementos.splice(indice, 1);
+            
+            // Actualiza la visualización de la lista en la página
+            actualizarLista();
+        } else {
+            alert("El elemento no se encontró en la lista.");
+        }
+    } else {
+        alert("No se introdujo un valor válido.");
+    }
+}
 
-    // muestra el resultado 
-    document.getElementById('resultado').textContent = `${pulgadas} pulgadas son ${centimetros.toFixed(2)} centímetros.`;
+a
+function actualizarLista() {
+    
+    const listaUl = document.getElementById("lista");
+    
+    
+    listaUl.innerHTML = "";
+    
+    
+    listaElementos.forEach(elemento => {
+        const li = document.createElement("li");
+        li.textContent = elemento;
+        listaUl.appendChild(li);
+    });
 }

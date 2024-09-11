@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Simulador de Lista</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <h1>Lista de compras para la casa</h1>
     <div class="container">
-        <h1>Calculadora de Pulgadas a Centímetros</h1>
-        <label for="pulgadas">Pulgadas:</label>
-        <input type="number" id="pulgadas" placeholder="Ingresa pulgadas">
-        <button onclick="convertir()">Convertir</button>
-        <p id="resultado"></p>
+        <input type="text" id="inputElemento" placeholder="Escribe un nuevo elemento">
+        <button onclick="agregarElemento()">Agregar Elemento</button>
+        <button onclick="eliminarElemento()">Eliminar Elemento</button>
     </div>
-    
-    <script src="./Javascript/main.js"></script>
+    <ul id="lista">
+    </ul>
+
+    <script src="Javascript/main.js"></script>
 </body>
 </html>
