@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Lista</title>
+    <title>Cellphone Shop</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1>Lista de compras para la casa</h1>
-    <div class="container">
-        <input type="text" id="inputElemento" placeholder="Escribe un nuevo elemento">
-        <button onclick="agregarElemento()">Agregar Elemento</button>
-        <button onclick="eliminarElemento()">Eliminar Elemento</button>
-    </div>
-    <ul id="lista">
-    </ul>
+
+    <header class="header">
+        <div class="container">
+            <h1>Cellphone Shop</h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="container">
+            <h2 class="titulo">Productos</h2>
+            <div class="productos" id="productos">
+                
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="titulo">Carrito</h2>
+            <div class="carrito">
+                <div id="carrito-vacio">
+                    <h4>Tu carrito está vacío.</h4>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    
+                </div>
+                <div class="carrito-total">
+                    <h2>Total: <span id="carrito-total">$0</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Cellphone Shop @ derechos reservados</p>
+        </div>
+    </footer>
 
     <script src="Javascript/main.js"></script>
 </body>
