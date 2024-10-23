@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cellphone Shop</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
 
@@ -40,7 +41,23 @@
             <p>Cellphone Shop @ derechos reservados</p>
         </div>
     </footer>
+    <div class="modal d-none modal-confirmacion">
+        <div class="modal-content">
+            <span class="close close-confirmacion">&times;</span>
+            <p class="modal-mensaje"></p>
+        </div>
+    </div>
 
+    <div class="modal d-none modal-resumen">
+        <div class="modal-content">
+            <span class="close close-resumen">&times;</span>
+            <h2>Resumen del Pedido</h2>
+            <div class="resumen-detalles"></div>
+            <p class="resumen-total"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="Javascript/main.js"></script>
 </body>
 </html>

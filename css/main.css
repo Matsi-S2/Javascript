@@ -118,3 +118,28 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--clr-black);
     padding-block: 2rem;
 }
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #1a8ff0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.d-none {
+    display: none;
+}
+button {
+    background-color: #a0e5d7;
+}

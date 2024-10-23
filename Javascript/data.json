@@ -1,0 +1,38 @@
+[
+    {
+        "id": "celular-01",
+        "titulo": "Samsung Galaxy A04 64gb 4gb ram",
+        "precio": 254.999,
+        "img": "./img/celular1.webp"
+    },
+    {
+        "id": "celular-02",
+        "titulo": "Samsung Galaxy A14(Mediatek) 5G 128gb 4gb ram",
+        "precio": 387.999,
+        "img": "./img/celular2.webp"
+    },
+    {
+        "id": "celular-03",
+        "titulo": "Samsung Galaxy A35 5G 128gb 6gb ram",
+        "precio": 379.999,
+        "img": "./img/celular3.webp"
+    },
+    {
+        "id": "celular-04",
+        "titulo": "Apple Iphone 15 128gb 6gb ram",
+        "precio": 991.999,
+        "img": "./img/celular4.webp"
+    },
+    {
+        "id": "celular-05",
+        "titulo": "Apple Iphone 13 128gb 4gb ram",
+        "precio": 859.999,
+        "img": "./img/celular5.jpg"
+    },
+    {
+        "id": "celular-06",
+        "titulo": "Apple Iphone 11 128gb 4gb ram",
+        "precio": 759.999,
+        "img": "./img/celular6.jpg"
+    }
+]
